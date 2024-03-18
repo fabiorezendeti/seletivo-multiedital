@@ -1,0 +1,92 @@
+version: '3.7'
+services:
+  pgsql:
+    image: postgres:12.4
+    ports: 
+    - "55432:5432"
+    environment: 
+      POSTGRES_PASSWORD: ingresso
+      POSTGRES_DB: ingresso
+      POSTGRES_USER: chef  
+      POSTGRES_SINGLE_USER: ingresso
+      POSTGRES_SINGLE_USER_PASSWORD: ingresso
+      TZ: America/Sao_Paulo    
+    volumes:
+    - './.docker/init:/docker-entrypoint-initdb.d'
+    - './.docker/data:/var/lib/postgresql/data'
+  candidato:    
+    build:
+        context: '.'    
+        target: 'development'
+        args:
+          uid: ${UID}      
+    depends_on:
+    - pgsql                
+    environment: 
+      PHP_EXTENSION_XDEBUG: 1                  
+    user: ${UID}
+    ports:
+    - "8823:8000"
+    volumes:    
+    - './src-candidato:/app'
+    working_dir: /app
+    links:
+    - pgsql
+    dns:
+    - 8.8.8.8
+    - 9.9.9.9
+    command: /bin/sh -c "composer install && php artisan migrate --database=pgsql-chef && php artisan serve --host 0.0.0.0 && php artisan queue:work --sleep=3 --tries=3 --max-time=3600"
+  chrome:
+    image: selenium/node-chrome:4.0.0-rc-2-prerelease-20210908
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - NOVNC=true
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - NO_VNC_PORT=7900
+    ports:
+      - "6900:5900"
+      - "7900:7900"
+
+  edge:
+    image: selenium/node-edge:4.0.0-rc-2-prerelease-20210908
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - NOVNC=true
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - NO_VNC_PORT=7901
+    ports:
+      - "6901:5900"
+      - "7901:7900"
+
+  firefox:
+    image: selenium/node-firefox:4.0.0-rc-2-prerelease-20210908
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - NOVNC=true
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - NO_VNC_PORT=7902
+    ports:
+      - "6902:5900"
+      - "7902:7900"
+
+  selenium-hub:
+    image: selenium/hub:4.0.0-rc-2-prerelease-20210908
+    container_name: selenium-hub
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+    links:
+    - candidato

@@ -1,0 +1,75 @@
+@import 'datatables.net-dt/css/jquery.dataTables';
+@import 'datatables.css';
+
+@font-face {
+    font-family: 'Balista Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Balista Regular'),
+    url("../fonts/Balista-2OWro.woff") format('woff');
+}
+
+html {
+    background: url("../images/bkg_candidato.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.font-balista {
+    font-family: 'Balista Regular';
+}
+
+#box-center, #lettering {
+    text-shadow: #4f4f4f 3px 2px 3px;
+}
+
+#buttons {
+    text-shadow: none;
+}
+
+.dark-green {
+    background-color: #206A5E;
+}
+
+.medium-green {
+    background-color: #639D67;
+}
+
+@media print {
+    @page { 
+        size: landscape;
+    }
+    body {
+        margin:0;
+        padding:0;
+        line-height: 1.4em;
+        }
+    * {
+        color: #000;
+        text-shadow: none; 
+        filter: none;
+       -ms-filter: none;
+    }
+    .no-print {
+        display: none;
+    }
+    .conteudo-barra-brasil{
+        display: none;
+    }
+}
+
+.modal {
+    transition: opacity 0.25s ease;
+}
+body.modal-active {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+}

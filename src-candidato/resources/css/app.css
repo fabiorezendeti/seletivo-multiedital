@@ -1,0 +1,48 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.manager-table > thead > tr > th {
+    @apply px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider;
+}
+
+.manager-table > tbody > tr > td {
+    @apply px-5 py-5 border-b border-gray-200 bg-white text-sm;
+}
+
+.orange-button {
+    @apply bg-orange-500  text-xs text-white font-bold py-2 px-3 mr-3 rounded-full;
+}
+
+.orange-button:hover {
+    @apply bg-orange-700;
+}
+
+.red-button {
+    @apply bg-red-700  text-xs text-white font-bold py-2 px-3 mr-3 rounded-full;
+}
+
+.orange-button:hover {
+    @apply bg-red-900;
+}
+
+.blue-button {
+    @apply bg-blue-500  text-xs text-white font-bold py-2 px-3 mr-3 rounded-full;
+}
+
+.blue-button:hover {
+    @apply bg-blue-700
+}
+
+.contrast{
+    background-image: none;
+    background-color: black !important;
+    color: white !important;
+}
+.contrast-border{
+    border-color: yellow !important;
+}
+.contrast-highlight{
+    color: yellow !important;
+}

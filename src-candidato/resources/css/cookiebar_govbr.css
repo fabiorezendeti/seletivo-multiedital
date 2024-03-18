@@ -1,0 +1,3290 @@
+:root {
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    --font-family-base: Rawline, Raleway, sans-serif;
+    --color-primary-pastel-01: #c5d4eb;
+    --color-primary-pastel-02: #dbe8fb;
+    --color-primary-lighten-01: #2670e8;
+    --color-primary-lighten-02: #5992ed;
+    --color-primary-default: #1351b4;
+    --color-primary-darken-01: #0c326f;
+    --color-primary-darken-02: #071d41;
+    --rgb-primary-pastel-01: 197, 212, 235;
+    --rgb-primary-pastel-02: 219, 232, 251;
+    --rgb-primary-lighten-01: 38, 112, 232;
+    --rgb-primary-lighten-02: 89, 146, 237;
+    --rgb-primary-default: 19, 81, 180;
+    --rgb-primary-darken-01: 12, 50, 111;
+    --rgb-primary-darken-02: 7, 29, 65;
+    --color-secondary-01: #fff;
+    --color-secondary-02: #f8f8f8;
+    --color-secondary-03: #ededed;
+    --color-secondary-04: #ccc;
+    --color-secondary-05: #9e9d9d;
+    --color-secondary-06: #888;
+    --color-secondary-07: #555;
+    --color-secondary-08: #333;
+    --color-secondary-09: #000;
+    --rgb-secondary-01: 255, 255, 255;
+    --rgb-secondary-02: 248, 248, 248;
+    --rgb-secondary-03: 237, 237, 237;
+    --rgb-secondary-04: 204, 204, 204;
+    --rgb-secondary-05: 158, 157, 157;
+    --rgb-secondary-06: 136, 136, 136;
+    --rgb-secondary-07: 85, 85, 85;
+    --rgb-secondary-08: 51, 51, 51;
+    --rgb-secondary-09: 0, 0, 0;
+    --color-secondary-10: rgba(0, 0, 0, 0.4);
+    --color-secondary-11: rgba(255, 255, 255, 0.64);
+    --color-secondary-12: rgba(0, 0, 0, 0.64);
+    --color-highlight: #268744;
+    --rgb-highlight: 38, 135, 68;
+    --color-success: #168821;
+    --color-warning: #ffcd07;
+    --color-danger: #e60000;
+    --color-info: #155bcb;
+    --rgb-success: 22, 136, 33;
+    --rgb-warning: 255, 205, 7;
+    --rgb-danger: 230, 0, 0;
+    --rgb-info: 21, 91, 203;
+    --color-support-01: #36a191;
+    --color-support-02: #f2e317;
+    --color-support-03: #d84800;
+    --color-support-04: #a26739;
+    --rgb-support-01: 54, 161, 145;
+    --rgb-support-02: 242, 227, 23;
+    --rgb-support-03: 216, 72, 0;
+    --rgb-support-04: 162, 103, 57;
+    --color-facebook: #3b5998;
+    --color-google-plus: #db4a39;
+    --color-linkedin: #0e76a8;
+    --color-twitter: #00acee;
+    --color-whatsapp: #25d366;
+    --color-xbox: #9bc848;
+    --color-yahoo: #720e9e;
+    --color-youtube: #c4302b;
+    --rgb-facebook: 59, 89, 152;
+    --rgb-google-plus: 219, 74, 57;
+    --rgb-linkedin: 14, 118, 168;
+    --rgb-twitter: 0, 172, 238;
+    --rgb-whatsapp: 37, 211, 102;
+    --rgb-xbox: 155, 200, 72;
+    --rgb-yahoo: 114, 14, 158;
+    --rgb-youtube: 196, 48, 43;
+    --icon-size-base: 16px;
+    --icon-size-xs: 8px;
+    --icon-size-sm: 12px;
+    --icon-size-lg: 20px;
+    --icon-size-2x: 32px;
+    --icon-size-3x: 48px;
+    --icon-size-4x: 64px;
+    --icon-size-5x: 80px;
+    --icon-size-6x: 96px;
+    --icon-size-7x: 112px;
+    --icon-size-8x: 128px;
+    --icon-size-9x: 144px;
+    --icon-size-10x: 160px;
+    --status-highlight-overlay: rgba(var(--rgb-support-03), 0.1);
+    --status-highlight-background: var(--color-secondary-01);
+    --status-highlight-text: var(--color-support-03);
+    --status-enabled-text: var(--color-primary-default);
+    --status-enabled-text-darken: var(--color-secondary-01);
+    --status-disabled-background: rgba(var(--rgb-secondary-03), 0.45);
+    --status-disabled-text: rgba(var(--rgb-secondary-04), 0.45);
+    --status-hover-background: var(--color-primary-pastel-02);
+    --status-pressed-background: var(--color-primary-darken-02);
+    --status-pressed-text: var(--color-primary-pastel-01);
+    --status-focused-overlay: rgba(var(--rgb-support-02), 0.3);
+    --status-focused-background: var(--color-primary-default);
+    --status-activated-background: var(--color-primary-darken-01);
+    --status-activated-text: var(--color-secondary-01);
+    --status-selected-background: var(--color-primary-lighten-01);
+    --status-selected-text: var(--color-secondary-01);
+    --status-dragged-background: var(--color-secondary-03);
+    --status-dragged-text: var(--color-secondary-08);
+    --status-dragged-shadow: rgba(var(--rgb-secondary-09), 0.16);
+    --status-visited-background: var(--color-primary-pastel-01);
+    --status-visited-text: var(--color-primary-darken-01);
+    --status-on-background: var(--color-primary-lighten-02);
+    --status-on-text: var(--color-secondary-01);
+    --status-off-background: var(--color-secondary-04);
+    --status-off-text: var(--color-secondary-07);
+    --font-weight-thin: 100;
+    --font-weight-extra-light: 200;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+    --font-weight-black: 900;
+    --font-size-scale-base: 14px;
+    --font-size-scale-down-01: 11.662px;
+    --font-size-scale-down-02: 9.716px;
+    --font-size-scale-down-03: 8.106px;
+    --font-size-scale-up-01: 16.8px;
+    --font-size-scale-up-02: 20.16px;
+    --font-size-scale-up-03: 24.192px;
+    --font-size-scale-up-04: 29.036px;
+    --font-size-scale-up-05: 34.832px;
+    --font-size-scale-up-06: 41.804px;
+    --font-size-scale-up-07: 50.162px;
+    --font-line-height-low: 1.15;
+    --font-line-height-medium: 1.45;
+    --font-line-height-high: 1.85;
+    --grid-breakpoint-xsmall: 0px;
+    --grid-breakpoint-small: 575px;
+    --grid-breakpoint-medium: 992px;
+    --grid-breakpoint-large: 1280px;
+    --grid-breakpoint-xlarge: 1600px;
+    --grid-portrait-maxwidth: 100%;
+    --grid-portrait-gutter: 16px;
+    --grid-portrait-columns: 4;
+    --grid-portrait-margin: 8px;
+    --grid-tablet-maxwidth: 100%;
+    --grid-tablet-gutter: 24px;
+    --grid-tablet-columns: 8;
+    --grid-tablet-margin: 40px;
+    --grid-desktop-maxwidth: 1200px;
+    --grid-desktop-gutter: 24px;
+    --grid-desktop-columns: 12;
+    --grid-desktop-margin: 40px;
+    --grid-tv-maxwidth: 1520px;
+    --grid-tv-gutter: 40px;
+    --grid-tv-columns: 12;
+    --grid-tv-margin: 40px;
+    --aa-search-input-height: 54px;
+    --aa-input-icon-size: 20px;
+    --aa-base-unit: 16;
+    --aa-spacing-factor: 1;
+    --aa-spacing: calc(var(--aa-base-unit) * var(--aa-spacing-factor) * 1px);
+    --aa-spacing-half: calc(var(--aa-spacing) / 2);
+    --aa-panel-max-height: 650px;
+    --aa-base-z-index: 9999;
+    --aa-font-size: calc(var(--aa-base-unit) * 1px);
+    --aa-font-family: inherit;
+    --aa-font-weight-medium: 500;
+    --aa-font-weight-semibold: 600;
+    --aa-font-weight-bold: 700;
+    --aa-icon-size: 20px;
+    --aa-icon-stroke-width: 1.6;
+    --aa-icon-color-rgb: 119, 119, 163;
+    --aa-icon-color-alpha: 1;
+    --aa-action-icon-size: 20px;
+    --aa-text-color-rgb: 38, 38, 39;
+    --aa-text-color-alpha: 1;
+    --aa-primary-color-rgb: 62, 52, 211;
+    --aa-primary-color-alpha: 0.2;
+    --aa-muted-color-rgb: 128, 126, 163;
+    --aa-muted-color-alpha: 0.6;
+    --aa-panel-border-color-rgb: 128, 126, 163;
+    --aa-panel-border-color-alpha: 0.3;
+    --aa-input-border-color-rgb: 128, 126, 163;
+    --aa-input-border-color-alpha: 0.8;
+    --aa-background-color-rgb: 255, 255, 255;
+    --aa-background-color-alpha: 1;
+    --aa-input-background-color-rgb: 255, 255, 255;
+    --aa-input-background-color-alpha: 1;
+    --aa-selected-color-rgb: 179, 173, 214;
+    --aa-selected-color-alpha: 0.205;
+    --aa-description-highlight-background-color-rgb: 245, 223, 77;
+    --aa-description-highlight-background-color-alpha: 0.5;
+    --aa-detached-media-query: (max-width: 680px);
+    --aa-detached-modal-media-query: (min-width: 680px);
+    --aa-detached-modal-max-width: 680px;
+    --aa-detached-modal-max-height: 500px;
+    --aa-overlay-color-rgb: 115, 114, 129;
+    --aa-overlay-color-alpha: 0.4;
+    --aa-panel-shadow: 0 0 0 1px rgba(35, 38, 59, 0.1), 0 6px 16px -4px rgba(35, 38, 59, 0.15);
+    --aa-scrollbar-width: 13px;
+    --aa-scrollbar-track-background-color-rgb: 234, 234, 234;
+    --aa-scrollbar-track-background-color-alpha: 1;
+    --aa-scrollbar-thumb-background-color-rgb: var(--aa-background-color-rgb);
+    --aa-scrollbar-thumb-background-color-alpha: 1
+}
+
+.reset-cookies.d-none{
+    display: none !important;
+}
+
+.dsgov .lgpd-reset-cookies{
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+}
+.dsgov .lgpd-reset-cookies a{
+    padding-left: 24px;
+    font-size: initial;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+.dsgov .lgpd-reset-cookies a::before {
+    display: block;
+    font-size: 18px;
+    font-family: "Font Awesome 5 Free";
+    content: "\F564";
+    cursor: pointer;
+    font-weight: 900;
+    color: #fff !important;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+button.reset-cookies{
+    height: 32px;
+    width: 40px;
+    float: right;
+}
+button.reset-cookies span{
+    position: unset;
+    width: 27px;
+    height: 27px;
+    visibility: hidden;
+}
+button.reset-cookies span::before {
+    display: block;
+    font-size: 18px;
+    font-family: "Font Awesome 5 Free";
+    content: "\F564";
+    cursor: pointer;
+    font-weight: 900;
+    color: #fff !important;
+    width: 27px;
+    height: 27px;
+    top: 0px;
+    left: 0;
+    pointer-events: none;
+    box-sizing: border-box;
+    visibility: initial;
+}
+@media (hover: none) and (pointer: coarse) {
+    :root {
+        --aa-spacing-factor: 1.2;
+        --aa-action-icon-size: 22px
+    }
+}
+/*! CSS Used from: https://www.gov.br/portal_css/Sunburst%20Theme/reset-cachekey-234b7866e4fff5191f12a7724c004619.css ; media=screen */
+@media screen {
+    @media screen {
+        .dsgov * {
+            margin: 0;
+            padding: 0;
+            font-family: "rawline",helvetica,arial,sans-serif !important;
+        }
+
+        .dsgov * :link, :visited {
+            text-decoration: none;
+        }
+
+        .dsgov * ul {
+            list-style: none;
+        }
+
+        .dsgov * li {
+            display: inline;
+        }
+
+        .dsgov * h1 {
+            font-size: 1em;
+        }
+
+        .dsgov a {
+            outline: none;
+        }
+    }
+}
+
+/*! CSS Used from: https://www.gov.br/portal_css/Sunburst%20Theme/base-cachekey-852e54caad2d3a5344588f592b37f350.css */
+@media screen {
+    .dsgov h1 {
+        font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
+        font-weight: bold;
+        color: Black;
+        line-height: 1.5em;
+    }
+
+    .dsgov h1 {
+        letter-spacing: -0.05em;
+    }
+
+    .dsgov h1 {
+        font-size: 2em;
+    }
+
+    .dsgov a:link, .dsgov a:visited {
+        color: #205c90;
+    }
+
+    .dsgov input {
+        font-family: "Lucida Grande", Arial, FreeSans;
+    }
+
+    .dsgov a:link {
+        color: #205c90;
+    }
+
+    .dsgov a:visited {
+        color: #427597;
+    }
+}
+
+@media screen {
+    .dsgov div.row {
+        float: left;
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+}
+
+@media screen {
+    .dsgov label {
+        font-weight: bold;
+    }
+}
+
+@media print {
+    .dsgov h1 {
+        font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
+        font-weight: bold;
+        line-height: 125%;
+        page-break-inside: avoid;
+        page-break-after: avoid;
+    }
+
+    .dsgov h1 {
+        letter-spacing: -0.05em;
+    }
+
+    .dsgov a {
+        text-decoration: none;
+        border-bottom: 0.1em solid gray;
+        color: black;
+    }
+
+    .dsgov .close {
+        display: none;
+    }
+}
+
+@media handheld, screen and (max-device-width: 480px) {
+    .dsgov input {
+        font-size: 140% !important;
+    }
+}
+
+/*! CSS Used from: https://www.gov.br/portal_css/Sunburst%20Theme/resourceplone.formwidget.datetimestyles-cachekey-f64793614e39f56c80821ff0e2ea258c.css */
+@media screen {
+    .dsgov .close {
+        opacity: 1;
+    }
+}
+
+/*! CSS Used from: https://www.gov.br/portal_css/Sunburst%20Theme/resourcelgpd.plugindsgov.min-cachekey-a77cdd8c58f0928e6adfd98cfb718444.css ; media=screen */
+@media screen {
+    @media screen {
+        .dsgov .d-none {
+            display: none !important;
+        }
+
+        .dsgov .flex-fill {
+            flex: 1 1 auto !important;
+        }
+
+        .dsgov .justify-content-between {
+            justify-content: space-between !important;
+        }
+
+        .dsgov .align-self-center {
+            align-self: center !important;
+        }
+
+        .dsgov .float-right {
+            float: right !important;
+        }
+
+        .dsgov .mt-1 {
+            margin-top: 8px !important;
+        }
+
+        .dsgov .mb-1 {
+            margin-bottom: 8px !important;
+        }
+
+        .dsgov .mb-2 {
+            margin-bottom: 12px !important;
+        }
+
+        .dsgov .text-right {
+            text-align: right !important;
+        }
+
+        @media (min-width: 575px) {
+            .dsgov .text-sm-right {
+                text-align: right !important;
+            }
+        }
+        .dsgov *, .dsgov *::before, .dsgov *::after {
+            box-sizing: border-box;
+        }
+
+        .dsgov hr {
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible;
+        }
+
+        .dsgov a {
+            background-color: transparent;
+        }
+
+        .dsgov b, .dsgov strong {
+            font-weight: bolder;
+        }
+
+        .dsgov button, .dsgov input {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: var(--font-line-height-medium);
+            margin: 0;
+        }
+
+        .dsgov button, .dsgov input {
+            overflow: visible;
+        }
+
+        .dsgov button {
+            text-transform: none;
+        }
+
+        .dsgov button, .dsgov [type=button] {
+            appearance: button !important;
+        }
+
+        .dsgov [type=checkbox] {
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        .dsgov p {
+            margin-bottom: var(--spacing-scale-2x) !important;
+            margin-top: 0;
+        }
+
+        .dsgov a {
+            color: var(--interactive);
+            text-decoration: none;
+        }
+
+        .dsgov a:focus {
+            outline: none;
+        }
+
+        .dsgov .main-content a {
+            font-weight: var(--font-weight-bold);
+            text-decoration: underline;
+        }
+
+        .dsgov .main-content a:not(:disabled):hover {
+            background-image: linear-gradient(rgba(var(--interactive-rgb), var(--hover)), rgba(var(--interactive-rgb), var(--hover)));
+        }
+
+        .dsgov .main-content a:not(:disabled):active {
+            background-image: linear-gradient(rgba(var(--interactive-rgb), var(--pressed)), rgba(var(--interactive-rgb), var(--pressed)));
+        }
+
+        .dsgov .main-content a:focus {
+            outline: none;
+        }
+
+        .dsgov button {
+            cursor: pointer;
+        }
+
+        .dsgov h1 {
+            font-size: var(--font-size-scale-up-06);
+            font-weight: var(--font-weight-regular);
+        }
+
+        .dsgov h1 {
+            line-height: var(--font-line-height-low);
+            margin-bottom: var(--spacing-scale-4x);
+            margin-top: 0;
+        }
+
+        .dsgov ul {
+            margin: var(--spacing-scale-2x) 0;
+            padding: 0 var(--spacing-scale-6x);
+        }
+
+        .dsgov label {
+            font-size: var(--font-size-scale-base);
+            font-weight: var(--font-weight-semi-bold);
+            line-height: var(--font-line-height-medium);
+        }
+
+        .dsgov ::placeholder {
+            font-size: var(--font-size-scale-base);
+            font-style: italic;
+            font-weight: var(--font-weight-regular);
+            opacity: 1;
+        }
+
+        .dsgov input {
+            color: var(--color-secondary-08);
+            font-size: var(--font-size-scale-up-01);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .dsgov .fa {
+            --icon-size: var(--icon-size-base);
+            display: inline-block;
+            font-size: var(--icon-size);
+            text-align: center;
+            width: calc(var(--icon-size) + 8px);
+        }
+
+        .dsgov [disabled] {
+            cursor: not-allowed;
+            opacity: var(--disabled);
+        }
+
+        .dsgov .container {
+            width: 100%;
+            padding-right: 8px;
+            padding-left: 8px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 575px) {
+            .dsgov .container {
+                max-width: 1198px;
+            }
+        }
+        @media (min-width: 992px) {
+            .dsgov .container {
+                max-width: 1199px;
+            }
+        }
+        @media (min-width: 1280px) {
+            .dsgov .container {
+                max-width: 1200px;
+            }
+        }
+        @media (min-width: 1600px) {
+            .dsgov .container {
+                max-width: 1520px;
+            }
+        }
+        .dsgov .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -8px;
+            margin-left: -8px;
+        }
+
+        .dsgov .col-sm, .dsgov .col, .dsgov .col-auto, .dsgov .col-12 {
+            position: relative;
+            width: 100%;
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+
+        .dsgov .col {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        .dsgov .col-auto {
+            flex: 0 0 auto;
+            width: auto;
+            max-width: 100%;
+        }
+
+        .dsgov .col-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        @media (min-width: 575px) {
+            .dsgov .col-sm {
+                flex-basis: 0;
+                flex-grow: 1;
+                max-width: 100%;
+            }
+        }
+        @media (min-width: 575px) {
+            .dsgov .container {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+
+            .dsgov .row {
+                margin-left: -12px;
+                margin-right: -12px;
+            }
+
+            .dsgov .col, .dsgov [class*=col-] {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+        }
+        @media (min-width: 1600px) {
+            .dsgov .row {
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+
+            .dsgov .col, .dsgov [class*=col-] {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        .dsgov .br-button {
+            --button-background: transparent;
+            --button-border: transparent;
+            --button-color: var(--interactive);
+            --button-radius: 100em;
+            --button-font-size: var(--font-size-scale-up-01);
+            --button-font-weight: var(--font-weight-semi-bold);
+            --button-xsmall: 24px;
+            --button-small: 32px;
+            --button-medium: 40px;
+            --button-large: 48px;
+            --button-size: var(--button-medium);
+            --button-padding: 0 var(--spacing-scale-3x);
+            --button-img: 20px;
+            --interactive-rgb: var(--rgb-primary-default);
+            align-items: center;
+            background-color: var(--button-background);
+            border: 1px solid var(--button-border);
+            border-radius: var(--button-radius);
+            color: var(--button-color);
+            cursor: pointer;
+            display: inline-flex;
+            font-size: var(--button-font-size);
+            font-weight: var(--button-font-weight);
+            height: var(--button-size);
+            justify-content: center;
+            padding: var(--button-padding);
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: auto;
+        }
+
+        .dsgov .br-button.circle {
+            border-radius: 50%;
+            padding: 0;
+            width: var(--button-size);
+        }
+
+        .dsgov .br-button.small {
+            --button-size: var(--button-small);
+        }
+
+        .dsgov .br-button.secondary {
+            --button-background: var(--color-secondary-01);
+            --button-border: var(--color-primary-default);
+        }
+
+        .dsgov .br-button:disabled {
+            cursor: not-allowed;
+        }
+
+        .dsgov .br-button:not(:disabled):focus {
+            outline: none;
+        }
+
+        .dsgov .br-button:not(:disabled):not(:disabled):hover {
+            background-image: linear-gradient(rgba(var(--interactive-rgb), var(--hover)), rgba(var(--interactive-rgb), var(--hover)));
+        }
+
+        .dsgov .br-button:not(:disabled):not(:disabled):active {
+            background-image: linear-gradient(rgba(var(--interactive-rgb), var(--pressed)), rgba(var(--interactive-rgb), var(--pressed)));
+        }
+
+        .dsgov .br-card {
+            --card-background: var(--color-secondary-01);
+            --card-back-background: var(--color-secondary-07);
+            --card-margin: var(--spacing-scale-2x);
+            --card-padding: var(--spacing-scale-2x);
+            --card-shadow: var(--surface-shadow-sm);
+            background: var(--card-background);
+            box-shadow: var(--card-shadow);
+            color: var(--card-color);
+            margin-bottom: var(--card-margin);
+        }
+
+        .dsgov .br-card .card-content {
+            padding: var(--card-padding);
+        }
+
+        .dsgov .br-card .card-content *:last-child {
+            margin-bottom: 0;
+        }
+
+        .dsgov .br-card .br-list .br-item {
+            white-space: normal;
+        }
+
+        .dsgov .br-cookiebar {
+            bottom: 0;
+            color: var(--color-secondary-08);
+            cursor: default;
+            font-family: inherit;
+            font-size: var(--font-size-scale-up-01);
+            left: 0;
+            outline: none;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 1000000;
+        }
+
+        @media (min-width: 575px) {
+            .dsgov .br-cookiebar .actions .br-button.secondary {
+                margin-right: var(--spacing-scale-5x);
+            }
+        }
+        @media (max-width: 574.98px) {
+            .dsgov .br-cookiebar {
+                font-size: var(--font-size-scale-base);
+            }
+
+            .dsgov .br-cookiebar .actions .br-button.secondary {
+                margin-bottom: var(--spacing-scale-2xh);
+                margin-right: 0;
+            }
+
+            .dsgov .br-cookiebar .br-modal-header.entry-content .br-modal-title {
+                margin-bottom: 0;
+            }
+
+            .dsgov .br-cookiebar .br-modal-header.entry-content .last-update {
+                font-size: var(--font-size-scale-base);
+            }
+
+            .dsgov .br-cookiebar .group-description {
+                font-size: var(--font-size-scale-base);
+            }
+
+            .dsgov .br-cookiebar .br-switch label {
+                font-size: var(--font-size-scale-base);
+            }
+
+            .dsgov .br-cookiebar .br-switch .switch-data::before {
+                font-size: var(--font-size-scale-base);
+            }
+
+            .dsgov .br-cookiebar .group-name {
+                font-size: var(--font-size-scale-base);
+            }
+        }
+        .dsgov .br-cookiebar.default {
+            top: unset;
+        }
+
+        .dsgov .br-cookiebar.default .entry-content {
+            display: none;
+        }
+
+        .dsgov .br-cookiebar.default .info-text {
+            display: block;
+        }
+
+        .dsgov .br-cookiebar.default .main-content {
+            display: none;
+        }
+
+        .dsgov .br-cookiebar.default .br-modal > .br-card {
+            --card-shadow: var(--surface-offset-none) calc(var(--surface-offset-md) * -1) var(--surface-blur-lg) rgba(var(--rgb-secondary-09), var(--surface-opacity-xs));
+        }
+
+        .dsgov .br-cookiebar.default .br-modal .wrapper {
+            overflow-y: unset;
+        }
+
+        .dsgov .br-cookiebar.default .actions {
+            border-top: none;
+        }
+
+        .dsgov .br-cookiebar .br-button i {
+            font-family: fontAwesome;
+        }
+
+        .dsgov .br-cookiebar .row {
+            float: none;
+            width: auto;
+        }
+
+        .dsgov .br-cookiebar .entry-text {
+            margin-bottom: 0;
+        }
+
+        .dsgov .br-cookiebar .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dsgov .br-cookiebar .info-text {
+            display: none;
+            line-height: var(--font-lineheight-medium);
+        }
+
+        .dsgov .br-cookiebar .wrapper {
+            overflow-y: scroll;
+        }
+
+        .dsgov .br-cookiebar .br-modal-header .br-modal-title {
+            font-size: var(--font-size-scale-up-05);
+            margin-bottom: 0;
+            max-height: unset;
+            width: auto;
+        }
+
+        .dsgov .br-cookiebar .br-modal-header h1 {
+            font-size: var(--font-size-scale-up-05);
+        }
+
+        .dsgov .br-cookiebar .br-modal-header .close {
+            margin-top: var(--spacing-scale-base);
+            opacity: 1;
+            position: static;
+        }
+
+        .dsgov .br-cookiebar .br-modal-header .last-update {
+            font-size: var(--font-size-scale-base);
+            font-weight: var(--font-weight-semi-bold);
+        }
+
+        .dsgov .br-cookiebar .br-modal-body {
+            flex: 1;
+            margin: 0;
+        }
+
+        .dsgov .br-cookiebar .br-modal-body:focus {
+            outline: none;
+        }
+
+        .dsgov .br-cookiebar .br-modal-body .br-list .br-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 400ms ease-in-out;
+        }
+
+        .dsgov .br-cookiebar .br-modal-body .br-list .br-item.open + .br-list {
+            max-height: 200em;
+        }
+
+        .dsgov .br-cookiebar .br-modal-body .br-list .header {
+            display: block;
+        }
+
+        .dsgov .br-cookiebar .br-modal-body .br-list .header .row div:nth-child(2) {
+            flex: 0 0 200px;
+        }
+
+        .dsgov .br-cookiebar .group-name {
+            color: var(--color-primary-default);
+        }
+
+        .dsgov .br-cookiebar .group-info .row div:nth-child(2) {
+            flex: 0 0 225px;
+        }
+
+        .dsgov .br-cookiebar .group-info .group-name {
+            cursor: pointer;
+        }
+
+        .dsgov .br-cookiebar .group-name {
+            cursor: pointer;
+        }
+
+        .dsgov .br-cookiebar .cookie-info .br-switch {
+            padding: var(--spacing-scale-half);
+            width: 120px;
+        }
+
+        .dsgov .br-cookiebar .cookie-info .br-card {
+            margin-bottom: var(--card-margin);
+        }
+
+        .dsgov .br-cookiebar .cookie-info .cookie-term {
+            font-weight: var(--font-weight-semi-bold);
+        }
+
+        .dsgov .br-cookiebar .cookie-info .fixed-width {
+            padding-left: var(--spacing-scale-base);
+            width: 110px;
+        }
+
+        .dsgov .br-cookiebar .notes p:first-child {
+            font-weight: var(--font-weight-semi-bold);
+        }
+
+        .dsgov .br-cookiebar .actions {
+            border-top: 1px solid var(--color-secondary-05);
+            margin: 0 -8px;
+            padding-left: var(--spacing-scale-3x);
+            padding-right: var(--spacing-scale-3x);
+            padding-top: var(--spacing-scale-3x);
+        }
+
+        .dsgov .br-cookiebar .br-switch.icon input + label::after {
+            font-family: fontAwesome;
+        }
+
+        .dsgov hr {
+            --divider-style: solid;
+            --divider-color: var(--divider-light);
+            --divider-padding: var(--spacing-scale-base);
+            --divider-size: 1px;
+            --divider-light: var(--color-secondary-04);
+            --divider-dark: var(--color-secondary-01);
+            border-color: var(--divider-color);
+            border-style: var(--divider-style);
+            border-width: 0;
+            border-top-width: var(--divider-size);
+            display: block;
+        }
+
+        .dsgov hr {
+            --divider-padding: var(--spacing-scale-2x);
+            margin: var(--divider-padding) 0;
+        }
+
+        .dsgov .br-item {
+            --interactive-rgb: var(--rgb-secondary-08);
+            --item-background: var(--bg-color);
+            --item-color: var(--text-color);
+            --item-font-weight: var(--font-weight);
+            --item-padding-x: var(--spacing-scale-2x);
+            --item-padding-y: var(--spacing-scale-base);
+            --item-padding: var(--item-padding-y) var(--item-padding-x);
+            background: var(--item-background);
+            border: 0;
+            color: var(--item-color);
+            display: block;
+            font-weight: var(--item-font-weight);
+            padding: var(--item-padding);
+            text-align: left;
+            width: 100%;
+        }
+
+        .dsgov .br-item .row {
+            margin-left: calc(-1 * var(--spacing-scale-base));
+            margin-right: calc(-1 * var(--spacing-scale-base));
+        }
+
+        .dsgov .br-item .row [class*=col-] {
+            padding-left: var(--spacing-scale-base);
+            padding-right: var(--spacing-scale-base);
+        }
+        .dsgov .row .col, .dsgov .row .group-name {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .dsgov .br-item::after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        .dsgov .br-item:focus {
+            outline: none;
+        }
+
+        .dsgov .br-list .header {
+            align-items: var(--spacing-vertical-center);
+            display: flex;
+            font-size: var(--font-size-scale-base);
+            font-weight: var(--font-weight-bold);
+            justify-content: space-between;
+            padding: var(--spacing-scale-base) var(--spacing-scale-2x);
+        }
+
+        .dsgov .br-list .br-item {
+            text-align: var(--spacing-horizontal-left);
+            width: 100%;
+        }
+
+        .dsgov .br-list .br-item .fa {
+            text-align: center;
+        }
+
+        .dsgov .br-list .br-item.open + .br-list {
+            max-height: 200em;
+        }
+
+        @media (min-width: 575px) {
+            .dsgov .br-modal {
+                width: auto;
+            }
+        }
+        .dsgov .br-modal-header {
+            margin-bottom: var(--spacing-scale-3xh);
+            position: relative;
+        }
+
+        .dsgov .br-modal-header .close {
+            position: absolute;
+            right: 0;
+            top: calc(var(--spacing-scale-half) * -1);
+        }
+
+        .dsgov .br-modal-title {
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            font-size: var(--font-size-scale-up-01);
+            font-weight: var(--700);
+            margin: 0;
+            max-height: var(--font-size-scale-up-07);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 80%;
+        }
+
+        .dsgov .br-modal-title:focus {
+            outline: none;
+        }
+
+        .dsgov .br-modal-body {
+            margin: 0 0 var(--spacing-scale-5x);
+        }
+
+        .dsgov .br-modal-footer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .dsgov .br-modal p:focus {
+            outline: none;
+        }
+
+        .dsgov .br-modal .br-card {
+            margin-bottom: 0;
+        }
+
+        .dsgov .br-button {
+            --button-background: transparent;
+            --button-border: transparent;
+            --button-color: var(--interactive);
+            --button-radius: 100em;
+            --button-font-size: var(--font-size-scale-up-01);
+            --button-font-weight: var(--font-weight-semi-bold);
+            --button-xsmall: 24px;
+            --button-small: 32px;
+            --button-medium: 40px;
+            --button-large: 48px;
+            --button-size: var(--button-medium);
+            --button-padding: 0 var(--spacing-scale-3x);
+            --button-img: 20px;
+            --interactive-rgb: var(--rgb-primary-default);
+            align-items: center;
+            background-color: var(--button-background);
+            border: 1px solid var(--button-border);
+            border-radius: var(--button-radius);
+            color: var(--button-color);
+            cursor: pointer;
+            display: inline-flex !important;
+            font-size: var(--button-font-size);
+            font-weight: var(--button-font-weight);
+            height: var(--button-size);
+            justify-content: center;
+            padding: var(--button-padding);
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: auto;
+        }
+
+        .dsgov .br-button.circle {
+            border-radius: 50%;
+            padding: 0;
+            width: var(--button-size);
+        }
+
+        .dsgov .br-button.small {
+            --button-size: var(--button-small);
+        }
+
+        .dsgov .br-button.secondary {
+            --button-background: var(--color-secondary-01);
+            --button-border: var(--color-primary-default);
+        }
+
+        .dsgov .br-button:disabled {
+            cursor: not-allowed;
+        }
+
+        .dsgov .br-button:not(:disabled):focus {
+            outline: none;
+        }
+
+        .dsgov .br-button:not(:disabled):not(:disabled):hover {
+            background-image: linear-gradient(rgba(var(--interactive-rgb), var(--hover)), rgba(var(--interactive-rgb), var(--hover)));
+        }
+
+        .dsgov .br-button:not(:disabled):not(:disabled):active {
+            background-image: linear-gradient(rgba(var(--interactive-rgb), var(--pressed)), rgba(var(--interactive-rgb), var(--pressed)));
+        }
+
+        .dsgov .br-switch {
+            --switch-background: var(--color-secondary-01);
+            --switch-border: var(--color-secondary-04);
+            --switch-radius: 100em;
+            --switch-padding: 16px;
+            --switch-height: var(--switch-height-medium);
+            --switch-width: var(--switch-width-medium);
+            --switch-toggle-bg: var(--switch-off);
+            --switch-toggle-size: var(--switch-toggle-medium);
+            --switch-icon-size: var(--switch-icon-medium);
+            --switch-on: var(--on);
+            --switch-off: var(--off);
+            --switch-height-small: 24px;
+            --switch-height-medium: 30px;
+            --switch-height-large: 36px;
+            --switch-width-small: 40px;
+            --switch-width-medium: 52px;
+            --switch-width-large: 64px;
+            --switch-toggle-small: 16px;
+            --switch-toggle-medium: 22px;
+            --switch-toggle-large: 28px;
+            --switch-icon-small: var(--icon-size-xs);
+            --switch-icon-medium: var(--icon-size-sm);
+            --switch-icon-large: var(--icon-size-base);
+            display: inline-flex;
+            min-height: var(--switch-height);
+        }
+
+        .dsgov .br-switch input {
+            appearance: none;
+            height: 0;
+            overflow: hidden;
+            position: absolute;
+            width: 0;
+        }
+
+        .dsgov .br-switch input + label {
+            align-items: center;
+            color: var(--color-secondary-08);
+            cursor: pointer;
+            display: inline-flex;
+            font-size: var(--font-size-scale-base);
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .dsgov .br-switch input + label::before {
+            background: var(--switch-background);
+            border: 1px solid var(--switch-border);
+            border-radius: var(--switch-radius);
+            content: "";
+            height: var(--switch-height);
+            position: absolute;
+            width: var(--switch-width);
+        }
+
+        .dsgov .br-switch input + label::after {
+            background: var(--switch-toggle-bg);
+            border-radius: 50%;
+            content: "";
+            height: var(--switch-toggle-size);
+            position: absolute;
+            transition: all 0.3s ease-in-out;
+            width: var(--switch-toggle-size);
+        }
+
+        .dsgov .br-switch input:checked + label::after {
+            --switch-toggle-bg: var(--switch-on);
+        }
+
+        .dsgov .br-switch input + label {
+            padding-right: calc(var(--switch-padding) + var(--switch-width));
+        }
+
+        .dsgov .br-switch input + label:empty {
+            padding-right: var(--switch-width);
+        }
+
+        .dsgov .br-switch input + label::before {
+            right: 0;
+        }
+
+        .dsgov .br-switch input + label::after {
+            right: calc(4px + var(--switch-toggle-size));
+        }
+
+        .dsgov .br-switch input:checked + label::after {
+            right: 4px;
+        }
+
+        .dsgov .br-switch.small {
+            --switch-height: var(--switch-height-small);
+            --switch-width: var(--switch-width-small);
+            --switch-toggle-size: var(--switch-toggle-small);
+            --switch-icon-size: var(--switch-icon-small);
+        }
+
+        .dsgov .br-switch input ~ .switch-data {
+            align-self: center;
+            color: var(--color-secondary-08);
+            font-size: var(--font-size-scale-base);
+            font-weight: var(--font-weight-regular);
+            margin-left: 8px;
+        }
+
+        .dsgov .br-switch input ~ .switch-data::before {
+            content: attr(data-disabled);
+        }
+
+        .dsgov .br-switch input:checked ~ .switch-data {
+            color: var(--color-secondary-08);
+        }
+
+        .dsgov .br-switch input:checked ~ .switch-data::before {
+            content: attr(data-enabled);
+        }
+
+        .dsgov .br-switch.icon input + label::after {
+            align-items: center;
+            color: var(--color-secondary-01);
+            content: "";
+            display: inline-flex;
+            font-family: "Font Awesome 5 Free", sans-serif;
+            font-size: var(--switch-icon-size);
+            font-weight: var(--font-weight-black);
+            justify-content: center;
+        }
+
+        .dsgov .br-switch.icon input:checked + label::after {
+            content: "";
+        }
+
+        .dsgov .br-switch input:focus + label::before {
+            border-color: var(--focus-color);
+            box-shadow: 0 0 0 var(--surface-width-md) var(--focus-color);
+            outline: none;
+        }
+
+        .dsgov .br-switch input:disabled + label {
+            cursor: not-allowed;
+            opacity: var(--disabled);
+        }
+
+        .dsgov .br-switch input:hover:not([disabled]) + label::before {
+            background-image: linear-gradient(rgba(var(--interactive-rgb), var(--hover)), rgba(var(--interactive-rgb), var(--hover)));
+        }
+
+        .dsgov .br-switch input:active:not([disabled]) + label::before {
+            background-image: linear-gradient(rgba(var(--interactive-rgb), var(--pressed)), rgba(var(--interactive-rgb), var(--pressed)));
+        }
+    }
+    @media screen {
+        @media (min-width: 767px) {
+            .dsgov .br-cookiebar {
+                right: 16px;
+                bottom: 16px;
+                left: 16px;
+            }
+        }
+        @media (max-width: 766px) {
+            .dsgov .br-cookiebar {
+                right: 4px;
+                bottom: 4px;
+                left: 4px;
+            }
+        }
+    }
+}
+
+/*! CSS Used from: https://use.fontawesome.com/releases/v5.10.2/css/all.css */
+.dsgov .fa {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.dsgov .fa-angle-down:before {
+    content: "\f107";
+}
+
+.dsgov .fa-times:before {
+    content: "\f00d";
+}
+
+.dsgov .fa {
+    font-family: "Font Awesome 5 Free";
+}
+
+.dsgov .fa {
+    font-weight: 900;
+}
+
+/*! CSS Used from: https://www.gov.br/++theme++padrao_govbr/govbrtheme-9f27fbe.css */
+.dsgov .d-none {
+    display: none !important;
+}
+
+.dsgov .flex-fill {
+    flex: 1 1 auto !important;
+}
+
+.dsgov .justify-content-between {
+    justify-content: space-between !important;
+}
+
+.dsgov .align-self-center {
+    align-self: center !important;
+}
+
+.dsgov .float-right {
+    float: right !important;
+}
+
+.dsgov .text-right {
+    text-align: right !important;
+}
+
+@media (min-width: 576px) {
+    .dsgov .text-sm-right {
+        text-align: right !important;
+    }
+}
+
+.dsgov *, .dsgov *::before, .dsgov *::after {
+    box-sizing: border-box;
+}
+
+.dsgov hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+.dsgov a {
+    background-color: transparent;
+}
+
+.dsgov b, .dsgov strong {
+    font-weight: bolder;
+}
+
+.dsgov button, .dsgov input {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: var(--font-line-height-medium);
+    margin: 0;
+}
+
+.dsgov button, .dsgov input {
+    overflow: visible;
+}
+
+.dsgov button {
+    text-transform: none;
+}
+
+.dsgov button, .dsgov [type="button"] {
+    -webkit-appearance: button;
+}
+
+.dsgov [type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.dsgov p {
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.dsgov a {
+    color: var(--color-primary-default);
+    text-decoration: none;
+}
+
+.dsgov button {
+    cursor: pointer;
+}
+
+.dsgov hr {
+    background-color: var(--color-secondary-04);
+    border: 0;
+    color: inherit;
+    height: 1px;
+    margin: 16px 0;
+}
+
+.dsgov h1 {
+    font-size: var(--font-size-scale-up-06);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--font-line-height-low);
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+
+.dsgov ul {
+    margin: 1rem 0;
+    padding: 0 3rem;
+}
+
+.dsgov label {
+    font-size: var(--font-size-scale-base);
+    font-weight: var(--font-weight-semi-bold);
+    line-height: var(--font-line-height-medium);
+}
+
+.dsgov ::placeholder {
+    font-size: var(--font-size-scale-base);
+    font-style: italic;
+    font-weight: var(--font-weight-regular);
+    opacity: 1;
+}
+
+.dsgov input {
+    font-size: var(--font-size-scale-up-01);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-secondary-08);
+}
+
+.dsgov .fa {
+    --icon-size: var(--icon-size-base);
+    display: inline-block;
+    font-size: var(--icon-size);
+    width: calc(var(--icon-size) + 8px);
+}
+
+.dsgov [disabled] {
+    cursor: not-allowed;
+}
+
+@media (min-width: 576px) {
+    .dsgov .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .dsgov .row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .dsgov .row [class^="col"] {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .dsgov .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .dsgov .row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .dsgov .row [class^="col"] {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .dsgov .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .dsgov .row {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+    .dsgov .row [class^="col"] {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.dsgov .container {
+    width: 100%;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .dsgov .container {
+        max-width: 1150px;
+    }
+}
+
+@media (min-width: 998px) {
+    .dsgov .container {
+        max-width: 1151px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .dsgov .container {
+        max-width: 1152px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .dsgov .container {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 576px) {
+    .dsgov .container {
+        max-width: 1150px;
+    }
+}
+
+@media (min-width: 998px) {
+    .dsgov .container {
+        max-width: 1151px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .dsgov .container {
+        max-width: 1152px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .dsgov .container {
+        max-width: 1440px;
+    }
+}
+
+.dsgov .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.dsgov .col-12, .dsgov .col, .dsgov .col-auto, .dsgov .col-sm {
+    position: relative;
+    width: 100%;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.dsgov .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.dsgov .col-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+
+.dsgov .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .dsgov .col-sm {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+}
+
+.dsgov .mt-1 {
+    margin-top: 8px !important;
+}
+
+.dsgov .mb-1 {
+    margin-bottom: 8px !important;
+}
+
+.dsgov .mb-2 {
+    margin-bottom: 12px !important;
+}
+
+.dsgov .br-button {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: var(--color-primary-default);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: var(--font-weight-semi-bold);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 24px;
+    text-align: center;
+    width: 100%;
+}
+
+@media (min-width: 575px) {
+    .dsgov .br-button {
+        min-width: 156px;
+        width: auto;
+        line-height: var(--font-line-height-medium);
+    }
+}
+
+.dsgov .br-button.secondary {
+    border-color: var(--color-primary-default);
+}
+
+.dsgov .br-button.circle {
+    border-radius: 50%;
+    height: var(--icon-size-3x);
+    min-width: 0;
+    padding: 0;
+    width: var(--icon-size-3x);
+}
+
+.dsgov .br-button:not(:disabled):focus {
+    background: var(--status-highlight-background) linear-gradient(var(--status-focused-overlay), var(--status-focused-overlay));
+}
+
+.dsgov .br-button:not(:disabled):hover {
+    background: var(--status-hover-background);
+}
+
+.dsgov .br-button:not(:disabled):active {
+    background: var(--status-pressed-background);
+    color: var(--status-pressed-text);
+}
+
+.dsgov .br-button:not(:disabled):active {
+    color: var(--color-secondary-01);
+}
+
+.dsgov .br-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.dsgov .br-list ul {
+    list-style: none;
+}
+
+.dsgov .br-list ul li::before {
+    color: currentColor;
+    content: "\2022";
+    display: inline-block;
+    opacity: 0.65;
+    padding-right: 8px;
+    position: absolute;
+    transform: scale(3) translate(-2px, -1px);
+}
+
+.dsgov .br-list ul {
+    margin: 0;
+}
+
+.dsgov .br-list ul li {
+    padding: 8px 0;
+}
+
+.dsgov .br-list .header {
+    align-items: center;
+    display: flex;
+    font-size: var(--font-size-scale-down-01);
+    font-weight: var(--font-weight-bold);
+    justify-content: space-between;
+    padding: 8px 16px;
+}
+
+.dsgov .br-list .br-list {
+    background-image: linear-gradient(transparent, rgba(var(--rgb-secondary-06), 0.24)), linear-gradient(rgba(var(--rgb-secondary-06), 0.24), transparent);
+    background-position: bottom, top;
+    background-repeat: no-repeat;
+    background-size: 100% 9px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 400ms ease-in-out;
+}
+
+.dsgov .br-modal {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 16px;
+    width: 28.8rem;
+}
+
+.dsgov .br-modal-header {
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.dsgov .br-modal-header .close {
+    background: transparent;
+    border: 0;
+    color: var(--color-primary-default, #1351b4);
+    font-weight: var(--font-weight-medium, 500);
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: -4px;
+}
+
+.dsgov .br-modal-title {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    font-size: var(--font-size-scale-up-01, 1.2);
+    font-weight: var(--700, 700);
+    margin: 0;
+    max-height: var(--font-size-scale-up-07, 3.583);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+}
+
+.dsgov .br-modal-body {
+    margin: 0 0 40px;
+}
+
+.dsgov .br-modal-footer {
+    display: flex;
+}
+
+.dsgov .br-modal .br-card {
+    border: 0;
+    font-size: var(--font-size-scale-base, 14px);
+    height: 216px;
+    margin-left: -16px;
+    margin-right: -16px;
+    overflow: auto;
+    padding: 0 16px;
+    resize: none;
+    width: auto;
+}
+
+.dsgov .br-modal .br-card::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dsgov .br-modal .br-card::-webkit-scrollbar-track {
+    background: var(--color-secondary-03, #ededed);
+}
+
+.dsgov .br-modal .br-card::-webkit-scrollbar-thumb {
+    background: var(--color-secondary-06, #888);
+}
+
+.dsgov .br-modal .br-card:focus, .dsgov .br-modal .br-card:active {
+    outline: none;
+}
+
+.dsgov .br-modal .br-card:hover::-webkit-scrollbar-thumb {
+    background: var(--color-secondary-07, #555);
+}
+
+.dsgov .br-cookiebar.default .br-modal .br-card .container {
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 16px;
+    padding-left: 16px;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1024px) {
+    .dsgov .br-cookiebar.default .br-modal .br-card .container {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .dsgov .br-cookiebar.default .br-modal .br-card .container {
+        width: 1152px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.dsgov h1, .dsgov p, .dsgov a, .dsgov strong, .dsgov b, .dsgov i, .dsgov ul, .dsgov li, .dsgov label {
+    font-family: "rawline", helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #555;
+    line-height: 1.75;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    letter-spacing: normal;
+    vertical-align: baseline;
+}
+
+.dsgov div, .dsgov span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    letter-spacing: normal;
+    vertical-align: baseline;
+}
+
+.dsgov h1 {
+    font-weight: 600;
+    font-size: 3.6rem;
+    color: #0c326f;
+    line-height: 4.4rem;
+}
+
+.dsgov [dir="ltr"] ul {
+    padding-left: 20px;
+}
+
+.dsgov ul {
+    list-style-type: square;
+}
+
+.dsgov a, .dsgov a:link, .dsgov a:visited, .dsgov a:hover, .dsgov a:active {
+    color: #1351b4;
+    font-weight: 500;
+}
+
+.dsgov a:hover {
+    text-decoration: underline;
+}
+
+.dsgov strong, .dsgov b {
+    font-weight: 600;
+}
+
+.dsgov button {
+    padding: 8px 32px;
+    border: 1px solid #1351b4;
+    border-radius: 32px;
+    color: #fff;
+    background: #1351b4;
+    font-size: 16px;
+    line-height: 1;
+    height: 40px;
+}
+
+.dsgov button:hover {
+    cursor: pointer;
+    background: #2670e8;
+    border-color: #2670e8;
+}
+
+.dsgov button:focus {
+    -webkit-box-shadow: 0 3px 6px rgba(38, 112, 232, 0.6);
+    box-shadow: 0 3px 6px rgba(38, 112, 232, 0.6);
+}
+
+.dsgov div.row {
+    display: block;
+    float: none;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .dsgov div.row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .dsgov div.row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .dsgov div.row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+.dsgov .br-cookiebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #000;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    background: rgba(0, 0, 0, 0.55) !important;
+}
+
+.br-cookiebar ::-webkit-scrollbar {
+    width: 3px;
+}
+
+.br-cookiebar ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.br-cookiebar ::-webkit-scrollbar-thumb {
+    background-color: #f3926b;
+    border-radius: 20px;
+    border: transparent;
+}
+
+.br-cookiebar .br-button.small.close {
+    display: block !important;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    border: none;
+    width: 25px !important;
+    height: 25px !important;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-button.small.close {
+        top: -25px;
+        right: 0;
+    }
+}
+
+.br-cookiebar .br-button.small.close i {
+    display: none;
+}
+
+.br-cookiebar .br-button.small.close::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    font-family: "Font Awesome 5 Free";
+    content: "\F00D";
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.br-cookiebar .br-button.small.close:hover {
+    background-color: transparent;
+    background-image: none;
+}
+
+.br-cookiebar .br-button.small.close:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.br-cookiebar .br-button.small.manage::before {
+    display: inline-block;
+    margin-right: 8px;
+    font-family: "Font Awesome 5 Free";
+    content: "\F564";
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: -2px;
+}
+
+.br-cookiebar a {
+    line-break: anywhere;
+    line-height: 18px;
+}
+
+.br-cookiebar p, .br-cookiebar a, .br-cookiebar b {
+    font-size: 12px;
+}
+
+.br-cookiebar p, .br-cookiebar b {
+    line-height: 18px;
+}
+
+.br-cookiebar ul {
+    margin-bottom: 10px;
+    padding-right: 0;
+    padding-left: 20px;
+}
+
+.br-cookiebar ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+.br-cookiebar ul li::before {
+    content: "\2022";
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    font-size: 5px;
+    opacity: 1;
+}
+
+.br-cookiebar .notes p {
+    margin: 5px 0;
+}
+
+.br-cookiebar .br-checkbox-govbr {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: 2px;
+    right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-checkbox-govbr {
+        right: 0;
+    }
+}
+
+.br-cookiebar input[type="checkbox"] {
+    display: none;
+}
+
+.br-cookiebar input[type="checkbox"] + label {
+    font-size: 11px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.br-cookiebar input[type="checkbox"]:checked + label {
+    background: #fff;
+}
+
+.br-cookiebar input[type="checkbox"] + label::before {
+    content: 'Desativado';
+    font-size: 10px;
+    font-weight: 600;
+    color: #757575;
+    text-indent: -63px;
+    line-height: 17px;
+    display: block;
+    visibility: visible;
+    border: 1px solid #ADADAD;
+    background-color: #fff;
+    width: 40px;
+    height: 22px;
+    border-radius: 30px;
+    margin-left: 9px;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar input[type="checkbox"] + label::before {
+        content: '';
+    }
+}
+
+.br-cookiebar input[type="checkbox"] + label::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\F00D";
+    cursor: pointer;
+    visibility: visible;
+    padding: 0;
+    color: #fff;
+    background-color: #ADADAD;
+    position: absolute;
+    left: 11px;
+    top: 2px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: left 150ms 0ms linear;
+    -o-transition: left 150ms 0ms linear;
+    transition: left 150ms 0ms linear;
+}
+
+.br-cookiebar input[type="checkbox"]:checked + label::before {
+    content: 'Ativado';
+    color: #3872E0;
+    text-indent: -46px;
+    display: block;
+    visibility: visible;
+    background-color: #D7E4FD;
+    border-color: #6493E6;
+    margin-left: 9px;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar input[type="checkbox"]:checked + label::before {
+        content: '';
+    }
+}
+
+.br-cookiebar input[type="checkbox"]:checked + label::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\F00C";
+    color: #E6EDFB;
+    cursor: pointer;
+    visibility: visible;
+    background-color: #6493E6;
+    position: absolute;
+    left: 29px;
+}
+
+.br-cookiebar input[type="checkbox"]:disabled + label::after {
+    content: "\F023";
+}
+
+.br-cookiebar .br-modal {
+    width: 400px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    border-radius: 12px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-modal {
+        width: 320px !important;
+    }
+}
+
+.br-cookiebar .br-modal h1 {
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    color: #333 !important;
+    line-height: normal !important;
+    margin-bottom: 5px !important;
+}
+
+.br-cookiebar .br-modal .message {
+    margin-top: 0 !important;
+    margin-bottom: 4px !important;
+}
+
+.br-cookiebar .br-modal .br-card {
+    height: 470px !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    padding: 0;
+}
+
+.br-cookiebar .br-modal .br-card hr {
+    display: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-modal .br-card {
+        height: 450px !important;
+    }
+}
+
+.br-cookiebar .br-modal .br-card .br-item.group-info {
+    font-size: 12px !important;
+    margin-top: 5px;
+}
+
+.br-cookiebar .br-modal .br-card .br-item.group-info ul li {
+    font-size: 12px !important;
+    display: block !important;
+    padding: 5px 0 !important;
+    line-height: 18px;
+}
+
+.br-cookiebar .br-modal .br-card .br-item.group-info ul li a {
+    font-size: 12px !important;
+}
+
+.br-cookiebar .br-modal .br-card .br-list {
+    background-image: none !important;
+}
+
+.br-cookiebar .br-modal .br-card .last-update {
+    display: none;
+}
+
+.br-cookiebar .br-modal .br-card .entry-text a {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 12px;
+    margin-top: 3px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #2453AE;
+}
+
+.br-cookiebar .br-modal .br-card .entry-text a:hover {
+    text-decoration: underline;
+}
+
+.br-cookiebar .br-modal .br-card .group-name {
+    display: block;
+    font-size: 12px;
+    color: #333;
+    font-weight: 600;
+    max-width: 300px;
+    margin-bottom: 10px;
+    cursor: auto;
+    padding-left: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-modal .br-card .group-name {
+        font-size: 12px;
+    }
+}
+
+.br-cookiebar .br-modal .br-card .group-description {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    line-height: 18px;
+}
+
+.br-cookiebar .br-modal .br-card .group-description b {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    line-height: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-modal .br-card .group-description {
+        font-size: 12px;
+    }
+
+    .br-cookiebar .br-modal .br-card .group-description b {
+        font-size: 12px;
+    }
+}
+
+.br-cookiebar .br-modal .br-card .br-modal-body {
+    height: 395px !important;
+    overflow: auto !important;
+    overflow-x: hidden !important;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-modal .br-card .br-modal-body {
+        padding-right: 10px;
+    }
+}
+
+.br-cookiebar .br-modal .br-card > .container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-modal .br-card > .container {
+        height: 450px;
+    }
+}
+
+.br-cookiebar .br-modal .br-card .wrapper {
+    padding: 0 30px 0 40px;
+    height: 395px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-modal .br-card .wrapper {
+        padding: 0 20px 0 34px;
+    }
+}
+
+.br-cookiebar .br-modal .br-card .br-item {
+    padding: 0 !important;
+}
+
+.br-cookiebar .br-modal .br-card .br-item.open .br-button.circle.small {
+    display: none !important;
+}
+
+.br-cookiebar .br-modal .br-modal-header {
+    margin-bottom: 0 !important;
+}
+
+.br-cookiebar .br-modal .br-modal-header .br-modal-title {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible;
+    position: relative;
+}
+
+.br-cookiebar .br-modal .br-modal-header .br-modal-title .row {
+    margin-top: 25px !important;
+    margin-bottom: 0 !important;
+}
+
+.br-cookiebar .br-modal .br-modal-header .br-modal-title h1 {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #333;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.br-cookiebar .br-modal .br-modal-footer {
+    background-color: #fff !important;
+    border: none !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-right: 45px;
+    padding-left: 45px;
+    position: relative;
+}
+
+.br-cookiebar .br-modal .br-modal-footer::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 48px;
+    top: 20px;
+    width: 350px;
+    height: 1px;
+    background-color: #D8D8D8;
+}
+
+.br-cookiebar .br-modal .br-modal-footer.actions {
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-modal .br-modal-footer.actions {
+        padding-top: 0;
+    }
+}
+
+.br-cookiebar .br-modal .br-modal-footer.actions .br-button {
+    margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-modal .br-modal-footer {
+        width: 100%;
+        left: 0 !important;
+        margin: 0;
+        bottom: -50px !important;
+        padding: 0 40px;
+        position: absolute;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .br-cookiebar .br-modal .br-modal-footer::before {
+        top: -8px;
+        left: 30px;
+        width: 292px;
+    }
+
+    .br-cookiebar .br-modal .br-modal-footer .br-button {
+        width: 107px;
+        height: 28px;
+        font-size: 12px;
+        margin: 0;
+        min-width: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-modal .br-modal-footer {
+        bottom: 10px !important;
+    }
+}
+
+.br-cookiebar .br-modal .row {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.br-cookiebar .br-button {
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+    min-width: auto;
+    margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-button {
+        width: 106px;
+        padding-bottom: 2px;
+    }
+}
+
+.br-cookiebar.default {
+    background: rgba(12, 30, 63, 0.85) !important;
+}
+
+.br-cookiebar.default .br-modal {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+}
+
+.br-cookiebar.default .br-modal .br-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto !important;
+    width: auto !important;
+    margin: 0;
+    padding: 28px 0;
+    background: transparent !important;
+    border-radius: 0 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar.default .br-modal .br-card {
+        padding: 16px 0;
+    }
+}
+
+.br-cookiebar.default .br-modal .br-card a {
+    font-size: 16px;
+    color: #F3F3F3;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar.default .br-modal .br-card a {
+        font-size: 12px;
+    }
+}
+
+.br-cookiebar.default .br-modal .br-card .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: auto;
+}
+
+@media only screen and (max-width: 1023px) {
+    .br-cookiebar.default .br-modal .br-card .container {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar.default .br-modal .br-card .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+.br-cookiebar.default .br-modal .br-card .container .wrapper {
+    margin: 0 24px 0 0;
+    padding: 0;
+    height: auto !important;
+    line-height: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar.default .br-modal .br-card .container .wrapper {
+        margin: 0;
+    }
+}
+
+.br-cookiebar.default .br-modal .br-card .container .wrapper .br-modal-body {
+    height: auto !important;
+    overflow: hidden !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.br-cookiebar.default .br-modal .br-card .container .wrapper .br-modal-body .info-text {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.br-cookiebar.default .br-modal .br-card .container .wrapper .br-modal-body .info-text, .br-cookiebar.default .br-modal .br-card .container .wrapper .br-modal-body .info-text a, .br-cookiebar.default .br-modal .br-card .container .wrapper .br-modal-body .info-text strong {
+    font-size: 1em;
+    line-height: 1.33 !important;
+    color: #fff !important;
+}
+
+.br-cookiebar.default .br-modal .br-card .container .wrapper .br-modal-body .info-text strong {
+    font-weight: 700;
+}
+
+.br-cookiebar.default .br-modal .br-card .container .wrapper .br-modal-body .info-text a {
+    text-decoration: underline;
+    line-break: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar.default .br-modal .br-card .container .wrapper .br-modal-body .info-text {
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+}
+
+.br-cookiebar.default .br-modal .br-card .container .br-modal-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-width: 560px;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    background-color: transparent !important;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1023px) {
+    .br-cookiebar.default .br-modal .br-card .container .br-modal-footer {
+        min-width: 376px;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+}
+
+.br-cookiebar.default .br-modal .br-card .container .br-modal-footer .br-button {
+    width: auto;
+    padding: 2px 12px 4px;
+    margin: 8px 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #fff;
+    background-color: transparent;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.br-cookiebar.default .br-modal .br-card .container .br-modal-footer .br-button.secondary {
+    padding: 2px 4px 4px;
+    min-width: 168px;
+    border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 1023px) {
+    .br-cookiebar.default .br-modal .br-card .container .br-modal-footer .br-button.btn-manage {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+        margin-bottom: -4px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar.default .br-modal .br-card .container .br-modal-footer .br-button, .br-cookiebar.default .br-modal .br-card .container .br-modal-footer .br-button.secondary {
+        width: 158px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .br-cookiebar.default .br-modal .br-card .container .br-modal-footer .br-button.btn-manage {
+        -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+        order: 0;
+        margin-bottom: 8px;
+    }
+}
+
+.br-cookiebar.default .br-modal .br-card .container .br-modal-footer::before {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar.default .br-modal .br-card .container .br-modal-footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        bottom: 0 !important;
+        padding: 0 30px;
+        margin-bottom: 0;
+        position: relative;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar.default .br-modal .br-card .container .br-modal-footer {
+        bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar.default .br-modal .br-card .container .br-modal-footer {
+        position: relative;
+        bottom: auto;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.br-cookiebar .br-modal-header .br-modal-title .col {
+    padding-right: 0;
+}
+
+.br-cookiebar .br-modal-header .br-modal-title .col {
+    padding-left: 0;
+}
+
+.br-cookiebar .br-button.small.close {
+    right: -10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .br-cookiebar .br-button.small.close {
+        top: -25px;
+        right: 0;
+    }
+}
+
+.dsgov .br-cookiebar .notes p:first-child {
+    font-weight: normal;
+}
+
+.dsgov .row {
+    display: block;
+    margin: 0 !important;
+    padding: 0;
+    width: 100%;
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url(https://use.fontawesome.com/releases/v5.10.2/webfonts/fa-brands-400.eot);
+    src: url(https://use.fontawesome.com/releases/v5.10.2/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.10.2/webfonts/fa-brands-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.10.2/webfonts/fa-brands-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.10.2/webfonts/fa-brands-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.10.2/webfonts/fa-brands-400.svg#fontawesome) format("svg");
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url(https://use.fontawesome.com/releases/v5.10.2/webfonts/fa-solid-900.eot);
+    src: url(https://use.fontawesome.com/releases/v5.10.2/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.10.2/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.10.2/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.10.2/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.10.2/webfonts/fa-solid-900.svg#fontawesome) format("svg");
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-100.eot);
+    src: url(fonts/rawline-100.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-100.woff2) format('woff2'), url(fonts/rawline-100.woff) format('woff'), url(fonts/rawline-100.ttf) format('truetype'), url(fonts/rawline-100.svg) format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-100i.eot);
+    src: url(fonts/rawline-100i.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-100i.woff2) format('woff2'), url(fonts/rawline-100i.woff) format('woff'), url(fonts/rawline-100i.ttf) format('truetype'), url(fonts/rawline-100i.svg) format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-200.eot);
+    src: url(fonts/rawline-200.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-200.woff2) format('woff2'), url(fonts/rawline-200.woff) format('woff'), url(fonts/rawline-200.ttf) format('truetype'), url(fonts/rawline-200.svg) format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-200i.eot);
+    src: url(fonts/rawline-200i.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-200i.woff2) format('woff2'), url(fonts/rawline-200i.woff) format('woff'), url(fonts/rawline-200i.ttf) format('truetype'), url(fonts/rawline-200i.svg) format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-300-.eot);
+    src: url(fonts/rawline-300-.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-300.woff2) format('woff2'), url(fonts/rawline-300.woff) format('woff'), url(fonts/rawline-300.ttf) format('truetype'), url(fonts/rawline-300.svg) format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-300i.eot);
+    src: url(fonts/rawline-300i.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-300i.woff2) format('woff2'), url(fonts/rawline-300i.woff) format('woff'), url(fonts/rawline-300i.ttf) format('truetype'), url(fonts/rawline-300i.svg) format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-400.eot);
+    src: url(fonts/rawline-400.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-400.woff2) format('woff2'), url(fonts/rawline-400.woff) format('woff'), url(fonts/rawline-400.ttf) format('truetype'), url(fonts/rawline-400.svg) format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-400i.eot);
+    src: url(fonts/rawline-400i.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-400i.woff2) format('woff2'), url(fonts/rawline-400i.woff) format('woff'), url(fonts/rawline-400i.ttf) format('truetype'), url(fonts/rawline-400i.svg) format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-500.eot);
+    src: url(fonts/rawline-500.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-500.woff2) format('woff2'), url(fonts/rawline-500.woff) format('woff'), url(fonts/rawline-500.ttf) format('truetype'), url(fonts/rawline-500.svg) format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-500i.eot);
+    src: url(fonts/rawline-500i.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-500i.woff2) format('woff2'), url(fonts/rawline-500i.woff) format('woff'), url(fonts/rawline-500i.ttf) format('truetype'), url(fonts/rawline-500i.svg) format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-600.eot);
+    src: url(fonts/rawline-600.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-600.woff2) format('woff2'), url(fonts/rawline-600.woff) format('woff'), url(fonts/rawline-600.ttf) format('truetype'), url(fonts/rawline-600.svg) format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-600i.eot);
+    src: url(fonts/rawline-600i.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-600i.woff2) format('woff2'), url(fonts/rawline-600i.woff) format('woff'), url(fonts/rawline-600i.ttf) format('truetype'), url(fonts/rawline-600i.svg) format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-700.eot);
+    src: url(fonts/rawline-700.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-700.woff2) format('woff2'), url(fonts/rawline-700.woff) format('woff'), url(fonts/rawline-700.ttf) format('truetype'), url(fonts/rawline-700.svg) format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-700i.eot);
+    src: url(fonts/rawline-700i.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-700i.woff2) format('woff2'), url(fonts/rawline-700i.woff) format('woff'), url(fonts/rawline-700i.ttf) format('truetype'), url(fonts/rawline-700i.svg) format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-800.eot);
+    src: url(fonts/rawline-800.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-800.woff2) format('woff2'), url(fonts/rawline-800.woff) format('woff'), url(fonts/rawline-800.ttf) format('truetype'), url(fonts/rawline-800.svg) format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-800i.eot);
+    src: url(fonts/rawline-800i.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-800i.woff2) format('woff2'), url(fonts/rawline-800i.woff) format('woff'), url(fonts/rawline-800i.ttf) format('truetype'), url(fonts/rawline-800i.svg) format('svg');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-900.eot);
+    src: url(fonts/rawline-900.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-900.woff2) format('woff2'), url(fonts/rawline-900.woff) format('woff'), url(fonts/rawline-900.ttf) format('truetype'), url(fonts/rawline-900.svg) format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rawline';
+    src: url(fonts/rawline-900i.eot);
+    src: url(fonts/rawline-900i.eot?#iefix) format('embedded-opentype'), url(fonts/rawline-900i.woff2) format('woff2'), url(fonts/rawline-900i.woff) format('woff'), url(fonts/rawline-900i.ttf) format('truetype'), url(fonts/rawline-900i.svg) format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: normal;
+    font-weight: 100;
+    src: url("fonts/rawline-100.woff2") format("woff2"), url("fonts/rawline-100.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: italic;
+    font-weight: 100;
+    src: url("fonts/rawline-100i.woff2") format("woff2"), url("fonts/rawline-100i.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: normal;
+    font-weight: 200;
+    src: url("fonts/rawline-200.woff2") format("woff2"), url("fonts/rawline-200.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: italic;
+    font-weight: 200;
+    src: url("fonts/rawline-200i.woff2") format("woff2"), url("fonts/rawline-200i.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: normal;
+    font-weight: 300;
+    src: url("fonts/rawline-300.woff2") format("woff2"), url("fonts/rawline-300.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: italic;
+    font-weight: 300;
+    src: url("fonts/rawline-300i.woff2") format("woff2"), url("fonts/rawline-300i.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/rawline-400.woff2") format("woff2"), url("fonts/rawline-400.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: italic;
+    font-weight: 400;
+    src: url("fonts/rawline-400i.woff2") format("woff2"), url("fonts/rawline-400i.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: normal;
+    font-weight: 500;
+    src: url("fonts/rawline-500.woff2") format("woff2"), url("fonts/rawline-500.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: italic;
+    font-weight: 500;
+    src: url("fonts/rawline-500i.woff2") format("woff2"), url("fonts/rawline-500i.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: normal;
+    font-weight: 600;
+    src: url("fonts/rawline-600.woff2") format("woff2"), url("fonts/rawline-600.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: italic;
+    font-weight: 600;
+    src: url("fonts/rawline-600i.woff2") format("woff2"), url("fonts/rawline-600i.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/rawline-700.woff2") format("woff2"), url("fonts/rawline-700.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: italic;
+    font-weight: 700;
+    src: url("fonts/rawline-700i.woff2") format("woff2"), url("fonts/rawline-700i.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: normal;
+    font-weight: 800;
+    src: url("fonts/rawline-800.woff2") format("woff2"), url("fonts/rawline-800.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: italic;
+    font-weight: 800;
+    src: url("fonts/rawline-800i.woff2") format("woff2"), url("fonts/rawline-800i.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: normal;
+    font-weight: 900;
+    src: url("fonts/rawline-900.woff2") format("woff2"), url("fonts/rawline-900.woff") format("woff");
+}
+
+@font-face {
+    font-family: rawline;
+    font-style: italic;
+    font-weight: 900;
+    src: url("fonts/rawline-00.woff2") format("woff2"), url("https://www.gov.br/cdn/sso-status-bar/src/font/rawline/font/rawline-100.woff") format("woff");
+}
+@media screen {
+    /* https://www.gov.br/portal_css/++resource++lgpd.plugin/dsgov.min.css?original=1 */
+@charset "UTF-8";
+    :root {
+        --font-family-base: Rawline, Raleway, sans-serif;
+        --surface-overlay-scrim: rgba(var(--rgb-secondary-09), var(--surface-opacity-md));
+        --surface-overlay-text: linear-gradient(rgba(var(--rgb-secondary-01), var(--surface-opacity-none)), rgba(var(--rgb-secondary-09), var(--surface-opacity-default)));
+        --interactive: var(--color-primary-default);
+        --interactive-rgb: var(--rgb-primary-default);
+        --visited: var(--color-primary-darken-01);
+        --disabled: var(--surface-opacity-md, 0.45);
+        --hover: var(--surface-opacity-xs, 0.16);
+        --hover-effect: linear-gradient(
+            rgba(var(--interactive-rgb), var(--hover)),
+            rgba(var(--interactive-rgb), var(--hover))
+        );
+        --pressed: var(--surface-opacity-md, 0.45);
+        --pressed-effect: linear-gradient(
+            rgba(var(--interactive-rgb), var(--pressed)),
+            rgba(var(--interactive-rgb), var(--pressed))
+        );
+        --focus-style: dashed;
+        --focus-color: var(--color-support-03);
+        --focus-offset: var(--spacing-scale-half);
+        --focus-width: var(--surface-width-lg, 4px);
+        --active: var(--color-primary-darken-01);
+        --selected: var(--color-primary-lighten-01);
+        --on: var(--color-primary-lighten-02);
+        --off: var(--color-secondary-06);
+        --ondrag-border-color: var(--interactive);
+        --ondrag-border-width: var(--surface-width-md, 2px);
+        --ondrag-border-style: solid;
+        --ondrag-shadow-offset-x: var(--surface-offset-none, 0);
+        --ondrag-shadow-offset-y: var(--surface-offset-md, 3px);
+        --ondrag-shadow-blur: var(--surface-blur-lg, 6px);
+        --ondrag-shadow-color: var(--interactive-rgb);
+        --ondrag-shadow-opacity: var(--surface-opacity-sm, 0.3);
+        --ondrag-opacity: var(--surface-opacity-xl, 0.85);
+        --ondrag-rotate: -5deg;
+        --ondrag-cursor: grabbing;
+        --draggable-icon: grip-vertical;
+        --draggable-cursor: grab;
+        --dropzone-border-color: var(--interactive);
+        --dropzone-border-width: var(--surface-width-sm, 1px);
+        --dropzone-border-style: dashed;
+        --ondrop-background: var(--interactive-rgb);
+        --ondrop-opacity: var(--surface-opacity-sm, 0.3);
+        --ondrop-cursor: copy;
+        --color-primary-pastel-01: #c5d4eb;
+        --color-primary-pastel-02: #dbe8fb;
+        --color-primary-lighten-01: #2670e8;
+        --color-primary-lighten-02: #5992ed;
+        --color-primary-default: #1351b4;
+        --color-primary-darken-01: #0c326f;
+        --color-primary-darken-02: #071d41;
+        --color-secondary-01: #fff;
+        --color-secondary-02: #f8f8f8;
+        --color-secondary-03: #ededed;
+        --color-secondary-04: #ccc;
+        --color-secondary-05: #9e9d9d;
+        --color-secondary-06: #888;
+        --color-secondary-07: #555;
+        --color-secondary-08: #333;
+        --color-secondary-09: #000;
+        --color-highlight: #268744;
+        --color-success: #168821;
+        --color-warning: #ffcd07;
+        --color-danger: #e60000;
+        --color-info: #155bcb;
+        --color-support-01: #36a191;
+        --color-support-02: #f2e317;
+        --color-support-03: #db4800;
+        --color-support-04: #a26739;
+        --color-support-05: #40e0d0;
+        --color-support-06: #48cbeb;
+        --color-support-07: #c72487;
+        --color-support-08: #63007f;
+        --color-support-09: #f08080;
+        --color-support-10: #ff8c00;
+        --color-support-11: #fdf5e6;
+        --color-facebook: #3b5998;
+        --color-google-plus: #db4a39;
+        --color-linkedin: #0e76a8;
+        --color-twitter: #00acee;
+        --color-whatsapp: #25d366;
+        --color-xbox: #9bc848;
+        --color-yahoo: #720e9e;
+        --color-youtube: #c4302b;
+        --icon-size-base: 16px;
+        --icon-size-xs: 8px;
+        --icon-size-sm: 12px;
+        --icon-size-lg: 20px;
+        --icon-size-2x: 32px;
+        --icon-size-3x: 48px;
+        --icon-size-4x: 64px;
+        --icon-size-5x: 80px;
+        --icon-size-6x: 96px;
+        --icon-size-7x: 112px;
+        --icon-size-8x: 128px;
+        --icon-size-9x: 144px;
+        --icon-size-10x: 160px;
+        --surface-width-none: 0;
+        --surface-width-sm: 1px;
+        --surface-width-md: 2px;
+        --surface-width-lg: 4px;
+        --surface-rounder-none: 0;
+        --surface-rounder-sm: 4px;
+        --surface-rounder-md: 8px;
+        --surface-rounder-lg: 16px;
+        --surface-rounder-pill: 999em;
+        --surface-opacity-none: 0;
+        --surface-opacity-default: 1;
+        --surface-opacity-xs: 0.16;
+        --surface-opacity-sm: 0.3;
+        --surface-opacity-md: 0.45;
+        --surface-opacity-lg: 0.65;
+        --surface-opacity-xl: 0.85;
+        --surface-border-solid-none: var(--surface-width-none) solid var(--color-secondary-06);
+        --surface-border-solid-sm: var(--surface-width-sm) solid var(--color-secondary-06);
+        --surface-border-solid-md: var(--surface-width-md) solid var(--color-secondary-06);
+        --surface-border-solid-lg: var(--surface-width-lg) solid var(--color-secondary-06);
+        --surface-border-dashed-none: var(--surface-width-none) dashed var(--color-secondary-06);
+        --surface-border-dashed-sm: var(--surface-width-sm) dashed var(--color-secondary-06);
+        --surface-border-dashed-md: var(--surface-width-md) dashed var(--color-secondary-06);
+        --surface-border-dashed-lg: var(--surface-width-lg) dashed var(--color-secondary-06);
+        --surface-blur-none: 0;
+        --surface-blur-sm: 1px;
+        --surface-blur-md: 3px;
+        --surface-blur-lg: 6px;
+        --surface-offset-none: 0;
+        --surface-offset-sm: 1px;
+        --surface-offset-md: 3px;
+        --surface-offset-lg: 6px;
+        --surface-offset-xl: 9px;
+        --surface-shadow-none: none;
+        --surface-shadow-sm: var(--surface-offset-none) var(--surface-offset-md) var(--surface-blur-lg) rgba(var(--rgb-secondary-09), var(--surface-opacity-xs));
+        --surface-shadow-md: var(--surface-offset-md) var(--surface-offset-lg) var(--surface-blur-lg) rgba(var(--rgb-secondary-09), var(--surface-opacity-xs));
+        --surface-shadow-lg: var(--surface-offset-lg) var(--surface-offset-xl) var(--surface-blur-lg) rgba(var(--rgb-secondary-09), var(--surface-opacity-xs));
+        --font-weight-thin: 100;
+        --font-weight-extra-light: 200;
+        --font-weight-light: 300;
+        --font-weight-regular: 400;
+        --font-weight-medium: 500;
+        --font-weight-semi-bold: 600;
+        --font-weight-bold: 700;
+        --font-weight-extra-bold: 800;
+        --font-weight-black: 900;
+        --font-size-scale-base: 14px;
+        --font-size-scale-down-01: 11.662px;
+        --font-size-scale-down-02: 9.716px;
+        --font-size-scale-down-03: 8.106px;
+        --font-size-scale-up-01: 16.8px;
+        --font-size-scale-up-02: 20.16px;
+        --font-size-scale-up-03: 24.192px;
+        --font-size-scale-up-04: 29.036px;
+        --font-size-scale-up-05: 34.832px;
+        --font-size-scale-up-06: 41.804px;
+        --font-size-scale-up-07: 50.162px;
+        --font-line-height-low: 1.15;
+        --font-line-height-medium: 1.45;
+        --font-line-height-high: 1.85;
+        --grid-breakpoint-xs: 0;
+        --grid-breakpoint-sm: 575px;
+        --grid-breakpoint-md: 992px;
+        --grid-breakpoint-lg: 1280px;
+        --grid-breakpoint-xl: 1600px;
+        --grid-portrait-maxwidth: 100%;
+        --grid-portrait-gutter: 16px;
+        --grid-portrait-columns: 4;
+        --grid-portrait-margin: 8px;
+        --grid-tablet-maxwidth: 100%;
+        --grid-tablet-gutter: 24px;
+        --grid-tablet-columns: 8;
+        --grid-tablet-margin: 40px;
+        --grid-desktop-maxwidth: 1200px;
+        --grid-desktop-gutter: 24px;
+        --grid-desktop-columns: 12;
+        --grid-desktop-margin: 40px;
+        --grid-tv-maxwidth: 1520px;
+        --grid-tv-gutter: 40px;
+        --grid-tv-columns: 12;
+        --grid-tv-margin: 40px;
+        --spacing-vertical-top: top;
+        --spacing-vertical-center: center;
+        --spacing-vertical-bottom: bottom;
+        --spacing-horizontal-left: left;
+        --spacing-horizontal-center: center;
+        --spacing-horizontal-right: right;
+        --spacing-scale-default: 0;
+        --spacing-scale-base: 8px;
+        --spacing-scale-2x: 16px;
+        --spacing-scale-3x: 24px;
+        --spacing-scale-4x: 32px;
+        --spacing-scale-5x: 40px;
+        --spacing-scale-6x: 48px;
+        --spacing-scale-7x: 56px;
+        --spacing-scale-8x: 64px;
+        --spacing-scale-9x: 72px;
+        --spacing-scale-10x: 80px;
+        --spacing-scale-half: 4px;
+        --spacing-scale-baseh: 12px;
+        --spacing-scale-2xh: 20px;
+        --spacing-scale-3xh: 28px;
+        --spacing-scale-4xh: 36px;
+        --spacing-scale-5xh: 44px;
+        --spacing-scale-6xh: 52px;
+        --spacing-scale-7xh: 60px;
+        --spacing-scale-8xh: 68px;
+        --spacing-scale-9xh: 76px;
+        --spacing-scale-10xh: 84px;
+        --rgb-primary-pastel-01: 197, 212, 235;
+        --rgb-primary-pastel-02: 219, 232, 251;
+        --rgb-primary-lighten-01: 38, 112, 232;
+        --rgb-primary-lighten-02: 89, 146, 237;
+        --rgb-primary-default: 19, 81, 180;
+        --rgb-primary-darken-01: 12, 50, 111;
+        --rgb-primary-darken-02: 7, 29, 65;
+        --rgb-secondary-01: 255, 255, 255;
+        --rgb-secondary-02: 248, 248, 248;
+        --rgb-secondary-03: 237, 237, 237;
+        --rgb-secondary-04: 204, 204, 204;
+        --rgb-secondary-05: 158, 157, 157;
+        --rgb-secondary-06: 136, 136, 136;
+        --rgb-secondary-07: 85, 85, 85;
+        --rgb-secondary-08: 51, 51, 51;
+        --rgb-secondary-09: 0, 0, 0;
+        --rgb-highlight: 38, 135, 68;
+        --rgb-success: 22, 136, 33;
+        --rgb-warning: 255, 205, 7;
+        --rgb-danger: 230, 0, 0;
+        --rgb-info: 21, 91, 203;
+        --rgb-support-01: 54, 161, 145;
+        --rgb-support-02: 242, 227, 23;
+        --rgb-support-03: 219, 72, 0;
+        --rgb-support-04: 162, 103, 57;
+        --rgb-support-05: 64, 224, 208;
+        --rgb-support-06: 72, 203, 235;
+        --rgb-support-07: 199, 36, 135;
+        --rgb-support-08: 99, 0, 127;
+        --rgb-support-09: 240, 128, 128;
+        --rgb-support-10: 255, 140, 0;
+        --rgb-support-11: 253, 245, 230;
+        --rgb-facebook: 59, 89, 152;
+        --rgb-google-plus: 219, 74, 57;
+        --rgb-linkedin: 14, 118, 168;
+        --rgb-twitter: 0, 172, 238;
+        --rgb-whatsapp: 37, 211, 102;
+        --rgb-xbox: 155, 200, 72;
+        --rgb-yahoo: 114, 14, 158;
+        --rgb-youtube: 196, 48, 43;
+    }
+}

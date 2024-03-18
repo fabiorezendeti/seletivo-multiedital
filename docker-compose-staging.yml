@@ -1,0 +1,82 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres:12.4    
+    environment: 
+      POSTGRES_PASSWORD: ingresso
+      POSTGRES_DB: ingresso
+      POSTGRES_USER: chef  
+      POSTGRES_SINGLE_USER: ingresso
+      POSTGRES_SINGLE_USER_PASSWORD: ingresso      
+      TZ: America/Sao_Paulo    
+    volumes:
+    - './.docker/init:/docker-entrypoint-initdb.d'
+    ports:
+    - "55432:5432"
+    restart: always
+  redis:
+    image: redis:latest    
+    restart: always  
+  candidato:   
+    build:
+        context: '.'    
+        target: 'staging'       
+    environment: 
+        APP_ENV: ${APP_ENV}
+        APP_URL: ${APP_URL}
+        APP_DEBUG: ${APP_DEBUG}
+        APP_NAME: "ingressoteste"
+        QUEUE_CONNECTION: ${QUEUE_CONNECTION}
+        AVALIACAO_SERVICO_CANAL: ${AVALIACAO_SERVICO_CANAL}
+        AVALIACAO_SERVICO_INSCRICAO_MEDIO: ${AVALIACAO_SERVICO_INSCRICAO_MEDIO}
+        AVALIACAO_SERVICO_INSCRICAO_SUPERIOR: ${AVALIACAO_SERVICO_INSCRICAO_SUPERIOR}
+        AVALIACAO_SERVICO_ORGAO: ${AVALIACAO_SERVICO_ORGAO}
+        AVALIACAO_SERVICO_URL_ACOMPANHAMENTO: ${AVALIACAO_SERVICO_URL_ACOMPANHAMENTO}
+        AVALIACAO_SERVICO_URL_AVALIACAO: ${AVALIACAO_SERVICO_URL_AVALIACAO}
+        AVALIACAO_SERVICO_USERLOGIN: ${AVALIACAO_SERVICO_USERLOGIN}
+        AVALIACAO_SERVICO_USERPASSWORD: ${AVALIACAO_SERVICO_USERPASSWORD}
+        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+        POSTGRES_DB: ${POSTGRES_DB}
+        POSTGRES_USER: ${POSTGRES_USER}
+        DB_CONNECTION: ${DB_CONNECTION}
+        DB_HOST: ${DB_HOST}
+        DB_PORT: ${DB_PORT}
+        DB_DATABASE: ${DB_DATABASE}
+        DB_USERNAME: ${DB_USERNAME}
+        DB_PASSWORD: ${DB_PASSWORD}
+        PGPASSWORD: ${PGPASSWORD}
+        DB_SCHEMA: ${DB_SCHEMA}
+        LOG_CHANNEL: daily
+        CHEF_DB_USERNAME: ${CHEF_DB_USERNAME}
+        CHEF_DB_PASSWORD: ${CHEF_DB_PASSWORD}
+        DB_CSI_RO_USERNAME: ${DB_CSI_RO_USERNAME}
+        DB_CSI_RW_USERNAME: ${DB_CSI_RW_USERNAME}
+        SESSION_DRIVER: ${SESSION_DRIVER}
+        REDIS_HOST: ${REDIS_HOST}
+        APP_KEY: ${APP_KEY}
+        MAIL_MAILER: ${MAIL_MAILER}
+        MAIL_HOST: ${MAIL_HOST}
+        MAIL_PORT: ${MAIL_PORT}
+        MAIL_USERNAME: ${MAIL_USERNAME}
+        MAIL_PASSWORD: ${MAIL_PASSWORD}
+        MAIL_ENCRYPTION: ${MAIL_ENCRYPTION}
+        MAIL_FROM_ADDRESS: ${MAIL_FROM_ADDRESS}
+        MAIL_FROM_NAME: ${MAIL_FROM_NAME}
+        PAGINA_POLITICA_PRIVACIDADE: ${PAGINA_POLITICA_PRIVACIDADE}
+        LOGIN_UNICO_ENABLE: ${LOGIN_UNICO_ENABLE}
+        LOGIN_UNICO_PROVIDER: ${LOGIN_UNICO_PROVIDER}
+        LOGIN_UNICO_CLIENT_ID: ${LOGIN_UNICO_CLIENT_ID}
+        LOGIN_UNICO_SECRET: ${LOGIN_UNICO_SECRET}
+        LOGIN_UNICO_REDIRECT_URL: ${LOGIN_UNICO_REDIRECT_URL}
+        LOGIN_UNICO_SCOPE: ${LOGIN_UNICO_SCOPE}
+        LOGIN_UNICO_URL_SERVICES: ${LOGIN_UNICO_URL_SERVICES}
+        TZ: America/Sao_Paulo             
+    ports:
+    - "8823:80"        
+    restart: always
+    volumes:    
+    - './src-candidato:/app'    
+    working_dir: /var/www/html/app    
+    links: 
+    - postgres
+    - redis    

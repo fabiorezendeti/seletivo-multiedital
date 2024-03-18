@@ -1,0 +1,2 @@
+    <x-jet-label value="{{ $label ?? 'Justificativa'}} (obrigatório)"  class="text-xl" />
+    <textarea name="justify_text" class="form-input rounded-md shadow-sm w-full" id="justify-update" rows="5" required>{{ old('justify.text') }}</textarea>    

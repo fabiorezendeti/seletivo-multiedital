@@ -1,0 +1,38 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class AddThreeColumnsToUsersTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::connection('pgsql-chef')->table('users', function (Blueprint $table) {
+            $table->string('sex',1)->nullable();
+            $table->date('rg_issue_date')->nullable();
+            $table->string('social_identification_number')->nullable()->unique();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::connection('pgsql-chef')->table('users', function (Blueprint $table) {
+            $table->dropColumn([
+                'sex',
+                'rg_issue_date',
+                'social_identification_number',
+            ]);
+        });
+    }
+}
